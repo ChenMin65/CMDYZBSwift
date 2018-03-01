@@ -13,6 +13,7 @@
 		E7B8199C2046B4B9000B6599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B8199A2046B4B9000B6599 /* LaunchScreen.storyboard */; };
 		E7B819A72046B4BA000B6599 /* DY_CopyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B819A62046B4BA000B6599 /* DY_CopyTests.swift */; };
 		E7B819B22046B4BA000B6599 /* DY_CopyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B819B12046B4BA000B6599 /* DY_CopyUITests.swift */; };
+		E7B819C92047A530000B6599 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B819C82047A530000B6599 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		E7B819AD2046B4BA000B6599 /* DY CopyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DY CopyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B819B12046B4BA000B6599 /* DY_CopyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DY_CopyUITests.swift; sourceTree = "<group>"; };
 		E7B819B32046B4BA000B6599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B819C82047A530000B6599 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 		E7B819C720479CA1000B6599 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E7B819C82047A530000B6599 /* TableViewCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B819922046B4B9000B6599 /* AppDelegate.swift in Sources */,
+				E7B819C92047A530000B6599 /* TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
