@@ -12,25 +12,25 @@ private let kTitleViewH : CGFloat = 40
 
 class CMHomeViewController: UIViewController {
     
-    //懒加载属性
-    private lazy var pageTitleView : CMPageTitleView = {
+    // MARK:- 懒加载属性
+    private lazy var pageTitleView : CMPageTitleView = {[weak self] in
         let titleFrame = CGRect(x: 0, y: kStatuBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleVeiw = CMPageTitleView(frame: titleFrame, titles: titles)
-
+        titleVeiw.delegate = self
         return titleVeiw
     }()
     
-    private lazy var pageContentView : CMPageContentView = {
+    private lazy var pageContentView : CMPageContentView = {[weak self] in
         
         //1.确定内容的Frame
-        let contentH = kScreenH - kStatuBarH - kNavigationBarH - kTitleViewH
+        let contentH = kScreenH - kStatuBarH - kNavigationBarH - kTitleViewH - kTabBarH
         let contentFrame = CGRect(x: 0, y: kStatuBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
         
         //2.确定所有的自控制器
         var childVcs = [UIViewController]()
-        
-        for _ in 0..<4{
+        childVcs.append(CMRecommendViewController())
+        for _ in 0..<3{
             let vc = UIViewController()
 
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
@@ -38,19 +38,21 @@ class CMHomeViewController: UIViewController {
         }
         
         let contentView = CMPageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
+        contentView.delegate = self
         
         return contentView
     }()
-    
+    // MARK:- 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
-        //设置UI界面
+        // MARK:-设置UI界面
         setupUI()
+        
     }
 
 }
 
-// mark:设置UI界面
+//  MARK:-设置UI界面
 extension CMHomeViewController{
     
     private func setupUI(){
@@ -117,3 +119,22 @@ extension CMHomeViewController{
     }
     
 }
+
+// MARK:- 遵守CMPageTitleViewDelegate协议
+extension CMHomeViewController : CMPageTitleViewDelegate{
+    
+    func pageTitleView(titleView: CMPageTitleView, selectedIndex index: Int) {
+     
+        pageContentView.setCurrentIndex(currentIndex: index)
+    }
+}
+
+// MARK:- 遵守协议CMPageContentViewDelegate
+extension CMHomeViewController : CMPageContentViewDelegate{
+    
+    func pageContenView(contentView: CMPageContentView, progress: CGFloat, sourceindex: Int, targetIndex: Int) {
+        
+        pageTitleView.setTitleViewProgress(progress: progress, sourceindex: sourceindex, targetIndex: targetIndex)
+    }
+}
+

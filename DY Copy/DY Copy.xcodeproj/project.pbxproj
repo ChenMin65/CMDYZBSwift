@@ -18,6 +18,13 @@
 		E766D7452047EE3A0071AD81 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E766D7442047EE3A0071AD81 /* Common.swift */; };
 		E766D7472049615E0071AD81 /* CMPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E766D7462049615E0071AD81 /* CMPageContentView.swift */; };
 		E766D74B204966CD0071AD81 /* UIColor-Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = E766D74A204966CD0071AD81 /* UIColor-Extension .swift */; };
+		E76C96C7204A862600A0B3D1 /* CMRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76C96C6204A862600A0B3D1 /* CMRecommendViewController.swift */; };
+		E76C96CA204A941200A0B3D1 /* CMCollectionHearderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76C96C8204A941200A0B3D1 /* CMCollectionHearderView.swift */; };
+		E76C96CB204A941200A0B3D1 /* CMCollectionHearderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76C96C9204A941200A0B3D1 /* CMCollectionHearderView.xib */; };
+		E76C96CE204A9B1900A0B3D1 /* CMCollectionViewNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76C96CC204A9B1900A0B3D1 /* CMCollectionViewNormalCell.swift */; };
+		E76C96CF204A9B1900A0B3D1 /* CMCollectionViewNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76C96CD204A9B1900A0B3D1 /* CMCollectionViewNormalCell.xib */; };
+		E76C96D2204AA9A100A0B3D1 /* CMCollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76C96D0204AA9A100A0B3D1 /* CMCollectionPrettyCell.swift */; };
+		E76C96D3204AA9A100A0B3D1 /* CMCollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76C96D1204AA9A100A0B3D1 /* CMCollectionPrettyCell.xib */; };
 		E7B819922046B4B9000B6599 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B819912046B4B9000B6599 /* AppDelegate.swift */; };
 		E7B819972046B4B9000B6599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B819952046B4B9000B6599 /* Main.storyboard */; };
 		E7B819992046B4B9000B6599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B819982046B4B9000B6599 /* Assets.xcassets */; };
@@ -55,6 +62,13 @@
 		E766D7442047EE3A0071AD81 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		E766D7462049615E0071AD81 /* CMPageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPageContentView.swift; sourceTree = "<group>"; };
 		E766D74A204966CD0071AD81 /* UIColor-Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension .swift"; sourceTree = "<group>"; };
+		E76C96C6204A862600A0B3D1 /* CMRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMRecommendViewController.swift; sourceTree = "<group>"; };
+		E76C96C8204A941200A0B3D1 /* CMCollectionHearderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMCollectionHearderView.swift; sourceTree = "<group>"; };
+		E76C96C9204A941200A0B3D1 /* CMCollectionHearderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CMCollectionHearderView.xib; sourceTree = "<group>"; };
+		E76C96CC204A9B1900A0B3D1 /* CMCollectionViewNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMCollectionViewNormalCell.swift; sourceTree = "<group>"; };
+		E76C96CD204A9B1900A0B3D1 /* CMCollectionViewNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CMCollectionViewNormalCell.xib; sourceTree = "<group>"; };
+		E76C96D0204AA9A100A0B3D1 /* CMCollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMCollectionPrettyCell.swift; sourceTree = "<group>"; };
+		E76C96D1204AA9A100A0B3D1 /* CMCollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CMCollectionPrettyCell.xib; sourceTree = "<group>"; };
 		E7B8198E2046B4B9000B6599 /* DY Copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DY Copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B819912046B4B9000B6599 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7B819962046B4B9000B6599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +118,8 @@
 		E766D72B2047CADF0071AD81 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E76C96C8204A941200A0B3D1 /* CMCollectionHearderView.swift */,
+				E76C96C9204A941200A0B3D1 /* CMCollectionHearderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +129,7 @@
 			children = (
 				E766D7192047AEF40071AD81 /* Home.storyboard */,
 				E766D73B2047CC380071AD81 /* CMHomeViewController.swift */,
+				E76C96C6204A862600A0B3D1 /* CMRecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +218,10 @@
 			children = (
 				E766D7422047EBD50071AD81 /* CMPageTitleView.swift */,
 				E766D7462049615E0071AD81 /* CMPageContentView.swift */,
+				E76C96CC204A9B1900A0B3D1 /* CMCollectionViewNormalCell.swift */,
+				E76C96CD204A9B1900A0B3D1 /* CMCollectionViewNormalCell.xib */,
+				E76C96D0204AA9A100A0B3D1 /* CMCollectionPrettyCell.swift */,
+				E76C96D1204AA9A100A0B3D1 /* CMCollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -450,9 +471,12 @@
 				E7B8199C2046B4B9000B6599 /* LaunchScreen.storyboard in Resources */,
 				E766D7222047AF5B0071AD81 /* Follows.storyboard in Resources */,
 				E766D7252047AF8B0071AD81 /* Profiles.storyboard in Resources */,
+				E76C96D3204AA9A100A0B3D1 /* CMCollectionPrettyCell.xib in Resources */,
 				E766D71D2047AF140071AD81 /* Lives.storyboard in Resources */,
 				E7B819992046B4B9000B6599 /* Assets.xcassets in Resources */,
 				E7B819972046B4B9000B6599 /* Main.storyboard in Resources */,
+				E76C96CB204A941200A0B3D1 /* CMCollectionHearderView.xib in Resources */,
+				E76C96CF204A9B1900A0B3D1 /* CMCollectionViewNormalCell.xib in Resources */,
 				E766D71B2047AEF40071AD81 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,9 +506,13 @@
 				E7B819922046B4B9000B6599 /* AppDelegate.swift in Sources */,
 				E766D74B204966CD0071AD81 /* UIColor-Extension .swift in Sources */,
 				E766D73C2047CC380071AD81 /* CMHomeViewController.swift in Sources */,
+				E76C96CE204A9B1900A0B3D1 /* CMCollectionViewNormalCell.swift in Sources */,
 				E766D73F2047D5AC0071AD81 /* UIBarButtonItem-Extension.swift in Sources */,
 				E766D7452047EE3A0071AD81 /* Common.swift in Sources */,
+				E76C96D2204AA9A100A0B3D1 /* CMCollectionPrettyCell.swift in Sources */,
+				E76C96CA204A941200A0B3D1 /* CMCollectionHearderView.swift in Sources */,
 				E766D7472049615E0071AD81 /* CMPageContentView.swift in Sources */,
+				E76C96C7204A862600A0B3D1 /* CMRecommendViewController.swift in Sources */,
 				E766D73A2047CBC20071AD81 /* CMMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
